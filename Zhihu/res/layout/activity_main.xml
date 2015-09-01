@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/ll_title" />
+
+    <FrameLayout
+        android:id="@+id/main_menu_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/main_body_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:visibility="visible" />
+
+</RelativeLayout>

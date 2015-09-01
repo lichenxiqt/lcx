@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/ll_root"
+    android:background="#f8f8ff" >
+
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#d3d3d3"
+        android:layout_above="@+id/button_cancle"
+        /><!-- 分割线 -->
+        
+    <Button
+        android:id="@+id/button_cancle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/cancle" 
+        android:background="@drawable/cancle_button_selecter"
+        /><!-- 取消按钮 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="底部弹出式菜单" />
+
+ </RelativeLayout>

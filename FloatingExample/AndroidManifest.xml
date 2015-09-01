@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gyc.ecample"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:maxSdkVersion="19"
+        android:minSdkVersion="8"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+		
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/add"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+		
+        <activity
+            android:name="com.gyc.ecample.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.gyc.ecample.FlyBitch"
+            android:exported="true" />		
+    </application>
+
+</manifest>

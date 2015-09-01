@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tab_text" type="id"/>
+    <item name="tab_back" type="id"/>
+    <item name="tab_random" type="id"/>
+    <item name="tab_search" type="id"/>
+    <item name="tab_msg" type="id"/>
+    <item name="tab_hide" type="id"/>
+    
+    <item type="id" name="ptr_content" />
+    <item type="id" name="ptr_text" />
+    <item type="id" name="ptr_progress" />
+
+</resources>

@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp" >
+
+    <!-- home item view title -->
+
+    <RelativeLayout
+        android:id="@+id/rl_hiv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical" >
+
+        <!-- 一般是 用户名+操作+专栏、问题或回答 -->
+        <!-- 也可能是 “热门回答” 或  “来自+话题” -->
+
+        <TextView
+            android:id="@+id/tv_hiv_title_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:text="王建党"
+            android:textColor="#99ccff" />
+
+        <TextView
+            android:id="@+id/tv_hiv_title_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_hiv_title_text1"
+            android:text="赞同了该回答" />
+
+        <!-- 用户或话题头像 -->
+
+        <ImageView
+            android:id="@+id/iv_hiv_title_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <!-- home item view body -->
+
+    <TextView
+        android:id="@+id/tv_hiv_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_hiv_title"
+        android:layout_margin="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="像柴静一样勇敢面对生命的“残酷”"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <!-- home item view content, nullable -->
+
+    <LinearLayout
+        android:id="@+id/ll_hiv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hiv_body"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <!-- 获得赞数 -->
+
+        <TextView
+            android:id="@+id/tv_hiv_content_ups"
+            android:layout_width="32dp"
+            android:layout_height="14dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:drawablePadding="2dp"
+            android:background="@drawable/ic_ups_num_bg"
+            android:textSize="12sp"
+            android:text="13K"
+            android:textColor="#ffffff" />
+
+        <!-- 回答内容摘要 -->
+
+        <TextView
+            android:id="@+id/tv_hiv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="柴静，1976年1月1日出生在山西临汾，1992年，到长沙铁道学院（现中南大学）读书，1995年，电台主持《夜色温柔》节目，1998年，到中国传媒大学学习电视编辑，并在湖南广播电视台主持《新青年》节目。2001年11月起担任中央电视台《东方时空》主持人。2003年担任《新闻调查》记者，出现在非典的第一线、矿难的真相调查，揭露一个个欲盖弥彰的谎言；2011年起担任《看见》主持人。2013年出版讲述央视十年历程的自传性作品《看见》，销量超过100万册，成为年度最畅销书籍。[1]" />
+    </LinearLayout>
+
+</RelativeLayout>

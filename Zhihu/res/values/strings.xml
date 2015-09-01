@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">知乎</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- Title及侧滑menu -->
+    <string name="title_home">首页</string>
+    <string name="title_loading">正在载入...</string>
+    <string name="title_pull">下拉刷新...</string>
+    <string name="title_find">发现</string>
+    <string name="title_attention">关注</string>
+    <string name="title_collection">收藏</string>
+    <string name="title_draft">草稿</string>
+    <string name="title_ask">提问</string>
+    <!-- 发现页面 -->
+    <string name="find_suggest">热门推荐</string>
+    <string name="find_collection">热门收藏</string>
+    <string name="find_month">本月热榜</string>
+    <string name="find_day">今日热榜</string>
+    <!-- 设置页面 -->
+    <string name="menu_setting">设置</string>
+    <string name="setting_system">系统设置</string>
+    <string name="setting_no_pic">无图模式</string>
+    <string name="setting_wifi_auto_pic">WiFi下自动加载图片</string>
+    <string name="setting_mime"></string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_search">Search</string>
+
+</resources>

@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- find item view title -->
+
+    <TextView
+        android:id="@+id/tv_fiv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="像柴静一样勇敢面对生命的“残酷”"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <!-- 分割线 -->
+
+    <View
+        android:id="@+id/fiv_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_fiv_title"
+        android:background="#e0e0e0" />
+
+    <!-- home item view content, nullable -->
+
+    <RelativeLayout
+        android:id="@+id/ll_hiv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fiv_divider"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <!-- 获得赞数 -->
+
+        <LinearLayout
+            android:id="@+id/ll_fiv_body_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- 用户或话题头像 -->
+
+            <ImageView
+                android:id="@+id/iv_fiv_body_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_hiv_content_ups"
+                android:layout_width="30dp"
+                android:layout_height="14dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_ups_num_bg"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="13K"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_fiv_body_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ll_fiv_body_left"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="柴静，1976年1月1日出生在山西临汾，1992年，到长沙铁道学院（现中南大学）读书，1995年，电台主持《夜色温柔》节目，1998年，到中国传媒大学学习电视编辑，并在湖南广播电视台主持《新青年》节目。2001年11月起担任中央电视台《东方时空》主持人。2003年担任《新闻调查》记者，出现在非典的第一线、矿难的真相调查，揭露一个个欲盖弥彰的谎言；2011年起担任《看见》主持人。2013年出版讲述央视十年历程的自传性作品《看见》，销量超过100万册，成为年度最畅销书籍。[1] 2014年从央视离职，2015年初推出空气污染深度调查《穹顶之下》。[" />
+    </RelativeLayout>
+
+</RelativeLayout>

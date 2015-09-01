@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="title_margin">8dp</dimen>
+    <dimen name="tab_text_size">20sp</dimen>
+    <dimen name="title_size">25dp</dimen>
+    <dimen name="tab_icon_width">38dp</dimen>
+    <dimen name="tab_icon_height">32dp</dimen>
+
+    <dimen name="ptr_progress_bar_stroke_width">4dp</dimen>
+
+</resources>
